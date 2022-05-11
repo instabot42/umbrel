@@ -8,3 +8,8 @@ services:
     ports:
       - 4000:4000
     environment:
+      # Bitcoin Core connection details
+      BT_BITCOIND_HOST: $BITCOIN_IP
+      BT_BITCOIND_PORT: $BITCOIN_RPC_PORT
+      BT_BITCOIND_USER: $BITCOIN_RPC_USER
+      BT_BITCOIND_PASS: $BITCOIN_RPC_PASS
