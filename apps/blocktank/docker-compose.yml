@@ -2,11 +2,11 @@ version: "3.7"
 
 services:
   web:
-    image: instabot42/multi-arch-test:latest
+    image: instabot42/blocktank:latest
     restart: on-failure
     stop_grace_period: 1m
     ports:
-      - 4000:4000
+      - 4000:80
     environment:
       # Bitcoin Core connection details
       BT_BITCOIND_HOST: $BITCOIN_IP
